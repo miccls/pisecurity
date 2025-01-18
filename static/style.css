@@ -2,6 +2,15 @@
     --futf-gul: #f1b232;
 }
 
+
+.feed {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+
 body {
     background-color: black;
 }
@@ -9,6 +18,8 @@ body {
 h1 {
     color: var(--futf-gul);
     text-align: left;
+    font-size: 64px; /* Makes the font bigger */
+    margin-left: 20px; /* Moves text to the right */
     font-family: "Lucida Console";
     text-shadow: 0px 0px 5px var(--futf-gul);
 }
@@ -18,13 +29,17 @@ h1 {
     color: var(--futf-gul);
     padding: 10px 20px;
     border: none;
+    margin-left: 20px;
+    font-size: 18px;
     border-radius: 5px;
     cursor: pointer;
     transition-duration: 0.4s;
+    transition: font-size 0.4s ease;
     font-family: "Lucida Console";
 }
 
 .button:hover {
+    font-size: 19px;
     transition-duration: 0.4s;
     box-shadow: 0px 0px 5px var(--futf-gul);
 }
